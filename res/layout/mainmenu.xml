@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:gravity="center_horizontal" android:orientation="vertical" android:weightSum="6">
+    <TextView android:id="@+id/textView1" android:layout_width="wrap_content" android:textSize="32sp" android:textStyle="bold" android:typeface="monospace" android:layout_height="wrap_content" android:text="Cross Out Xtreme" android:layout_weight="1"></TextView>
+    <Button android:id="@+id/button1" android:layout_width="fill_parent" android:textStyle="bold" android:text="Single Player Game" android:onClick="singlePlayerButtonClicked" android:typeface="monospace" android:textSize="24sp" android:layout_height="wrap_content" android:layout_weight="1"></Button>
+    <Button android:layout_width="fill_parent" android:textStyle="bold" android:id="@+id/button2" android:text="Two Player Game" android:onClick="twoPlayerButtonClicked" android:typeface="monospace" android:textSize="24sp" android:layout_height="wrap_content" android:layout_weight="1"></Button>
+    <Button android:id="@+id/button5" android:layout_height="wrap_content" android:text="Statistics" android:layout_width="fill_parent" android:layout_weight="1" android:textSize="24sp" android:textStyle="bold" android:typeface="monospace" android:onClick="statsClicked"></Button>
+    <Button android:textStyle="bold" android:layout_width="fill_parent" android:text="Options" android:id="@+id/button3" android:onClick="optionsClicked" android:typeface="monospace" android:textSize="24sp" android:layout_height="wrap_content" android:layout_weight="1"></Button>
+    <Button android:layout_width="fill_parent" android:id="@+id/button4" android:text="How To Play" android:typeface="monospace" android:textSize="24sp" android:textStyle="bold" android:onClick="htpClicked" android:layout_height="wrap_content" android:layout_weight="1"></Button>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:orientation="vertical" android:layout_height="fill_parent">
+        <TextView android:id="@+id/textView1" android:typeface="monospace" android:textSize="26sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="First Move"></TextView>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout2">
+            <ToggleButton android:typeface="monospace" android:text="ToggleButton" android:onClick="moveClicked" android:clickable="true" android:id="@+id/toggleButton1" android:layout_width="150dp" android:layout_height="80dp" android:textSize="20sp" android:textOff="Player 1" android:textOn="Player 1"></ToggleButton>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:gravity="right" android:id="@+id/linearLayout1">
+                <ToggleButton android:typeface="monospace" android:onClick="moveClicked" android:clickable="true" android:id="@+id/toggleButton2" android:layout_width="150dp" android:layout_height="80dp" android:textSize="20sp" android:text="ToggleButton" android:textOff="Player 2" android:textOn="Player 2"></ToggleButton>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_horizontal" android:id="@+id/linearLayout7" android:paddingBottom="5px">
+            <ToggleButton android:typeface="monospace" android:text="ToggleButton" android:onClick="moveClicked" android:clickable="true" android:id="@+id/toggleButton5" android:textOn="Alternate" android:layout_width="150dp" android:layout_height="80dp" android:textSize="20sp" android:textOff="Alternate"></ToggleButton>
+        </LinearLayout>
+        <TextView android:textSize="26sp" android:text="Difficulty" android:typeface="monospace" android:layout_height="wrap_content" android:id="@+id/textView2" android:layout_width="wrap_content"></TextView>
+        <LinearLayout android:id="@+id/linearLayout8" android:orientation="horizontal" android:layout_height="wrap_content" android:weightSum="100" android:layout_width="fill_parent">
+            <LinearLayout android:gravity="center_horizontal" android:layout_weight="50" android:id="@+id/linearLayout9" android:orientation="vertical" android:layout_height="fill_parent" android:layout_width="wrap_content">
+                <TextView android:textSize="18sp" android:text="Player 1 Color" android:typeface="monospace" android:layout_height="wrap_content" android:id="@+id/textView3" android:layout_width="wrap_content"></TextView>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:layout_weight="50" android:id="@+id/linearLayout10" android:orientation="vertical" android:layout_height="fill_parent" android:layout_width="wrap_content">
+                <TextView android:textSize="18sp" android:text="Player 2 Color" android:typeface="monospace" android:layout_height="wrap_content" android:id="@+id/textView4" android:layout_width="wrap_content"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:gravity="bottom" android:id="@+id/linearLayout5">
+            <Button android:onClick="backClicked" android:typeface="monospace" android:text="Back" android:layout_width="150dp" android:layout_height="70dp" android:id="@+id/button1" android:textSize="30sp"></Button>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="right" android:id="@+id/linearLayout6">
+                <Button android:onClick="startClicked" android:typeface="monospace" android:text="Start" android:layout_width="150dp" android:layout_height="70dp" android:id="@+id/button2" android:textSize="30sp"></Button>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

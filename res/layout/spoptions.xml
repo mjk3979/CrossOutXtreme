@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:orientation="vertical">
+    <TextView android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="First Move" android:typeface="monospace" android:textSize="26sp"></TextView>
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/linearLayout2">
+        <ToggleButton android:id="@+id/toggleButton1" android:textOff="Android" android:textOn="Android" android:layout_width="150dp" android:textSize="20sp" android:clickable="true" android:onClick="moveClicked" android:typeface="monospace" android:layout_height="80dp"></ToggleButton>
+        <LinearLayout android:layout_height="fill_parent" android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:gravity="right">
+            <ToggleButton android:text="ToggleButton" android:id="@+id/toggleButton2" android:textOn="Human" android:textOff="Human" android:textSize="20sp" android:layout_width="150dp" android:clickable="true" android:onClick="moveClicked" android:typeface="monospace" android:layout_height="80dp"></ToggleButton>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/linearLayout7" android:gravity="center_horizontal" android:paddingBottom="5px">
+        <ToggleButton android:id="@+id/toggleButton5" android:layout_width="150dp" android:textOff="Alternate" android:textOn="Alternate" android:textSize="20sp" android:clickable="true" android:onClick="moveClicked" android:typeface="monospace" android:layout_height="80dp"></ToggleButton>
+    </LinearLayout>
+    <TextView android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Difficulty" android:typeface="monospace" android:textSize="26sp"></TextView>
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/linearLayout8" android:orientation="horizontal" android:weightSum="100">
+        <LinearLayout android:layout_height="fill_parent" android:layout_width="wrap_content" android:id="@+id/linearLayout9" android:orientation="vertical" android:layout_weight="50" android:gravity="center_horizontal">
+            <TextView android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Player Color" android:typeface="monospace" android:textSize="18sp"></TextView>
+        </LinearLayout>
+        <LinearLayout android:layout_height="fill_parent" android:layout_width="wrap_content" android:id="@+id/linearLayout10" android:orientation="vertical" android:layout_weight="50" android:gravity="center_horizontal">
+            <TextView android:id="@+id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Computer Color" android:typeface="monospace" android:textSize="18sp"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:id="@+id/linearLayout5" android:layout_height="fill_parent" android:gravity="bottom">
+        <Button android:id="@+id/button1" android:layout_width="150dp" android:text="Back" android:typeface="monospace" android:onClick="backClicked" android:textSize="26sp" android:layout_height="70dp"></Button>
+        <LinearLayout android:id="@+id/linearLayout6" android:layout_height="wrap_content" android:layout_width="fill_parent" android:gravity="right">
+            <Button android:id="@+id/button2" android:layout_width="150dp" android:text="Start" android:typeface="monospace" android:onClick="startClicked" android:textSize="26sp" android:layout_height="70dp"></Button>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

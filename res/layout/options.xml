@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:orientation="vertical">
+    <TextView android:layout_height="wrap_content" android:id="@+id/textView2" android:layout_width="wrap_content" android:text="Sound Enabled" android:textSize="30sp" android:typeface="monospace"></TextView>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout5" android:paddingBottom="10px">
+        <ToggleButton android:id="@+id/toggleButton3" android:layout_height="80dp" android:layout_width="150dp" android:textSize="20sp" android:textOff="On" android:textOn="On" android:onClick="soundClicked" android:typeface="monospace"></ToggleButton>
+        <LinearLayout android:layout_height="fill_parent" android:id="@+id/linearLayout6" android:layout_width="fill_parent" android:gravity="right">
+            <ToggleButton android:id="@+id/toggleButton4" android:layout_height="80dp" android:layout_width="150dp" android:textSize="20sp" android:textOff="Off" android:textOn="Off" android:onClick="soundClicked" android:typeface="monospace"></ToggleButton>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AI Difficulty" android:textSize="30sp" android:typeface="monospace"></TextView>
+    <LinearLayout android:id="@+id/linearLayout3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center">
+        <ToggleButton android:text="ToggleButton" android:textOn="Easy" android:layout_width="100dp" android:onClick="diffClicked" android:layout_height="80dp" android:typeface="monospace" android:textOff="Easy" android:id="@+id/toggleButton1" android:textSize="12sp"></ToggleButton>
+        <ToggleButton android:text="ToggleButton" android:textOn="Hard" android:layout_width="100dp" android:onClick="diffClicked" android:layout_height="80dp" android:typeface="monospace" android:textOff="Hard" android:id="@+id/toggleButton2" android:textSize="12sp"></ToggleButton>
+        <ToggleButton android:text="ToggleButton" android:textOn="Very Hard" android:layout_width="100dp" android:layout_height="80dp" android:textOff="Very Hard" android:id="@+id/toggleButton5" android:onClick="diffClicked" android:typeface="monospace" android:textSize="12sp"></ToggleButton>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:id="@+id/linearLayout1" android:layout_height="fill_parent" android:gravity="bottom">
+        <Button android:id="@+id/button1" android:text="Cancel" android:onClick="cancelClicked" android:layout_height="80dp" android:typeface="monospace" android:layout_width="150dp" android:textSize="28sp"></Button>
+        <LinearLayout android:id="@+id/linearLayout2" android:layout_height="wrap_content" android:layout_width="fill_parent" android:gravity="right">
+            <Button android:id="@+id/button2" android:text="Save" android:onClick="saveClicked" android:layout_height="80dp" android:typeface="monospace" android:layout_width="150dp" android:textSize="28sp"></Button>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
