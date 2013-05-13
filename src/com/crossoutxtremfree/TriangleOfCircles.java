@@ -22,50 +22,12 @@ import android.view.View;
 public class TriangleOfCircles extends Activity implements OnClickListener
 {
 	public static boolean soundOn;
-	private boolean eulaShowing;
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mainmenu);
-        SharedPreferences prefs = this.getSharedPreferences("TriangleOfCircles", Context.MODE_PRIVATE);
-        boolean eula = false;
-        
-        eula = prefs.getBoolean("eula", false);
-        if (!eula)
-        {
-        	eulaShowing = true;
-        	AlertDialog eulaBox = new AlertDialog.Builder(this).create();
-        	eulaBox.setTitle("EULA");
-        	eulaBox.setMessage(readTxt());
-        	eulaBox.setButton("Agree", this);
-        	eulaBox.setButton2("Disagree", this);
-        	eulaBox.show();
-        }
-        else
-        	startup();
-    }
-    
-    private String readTxt()
-    {
-    	try
-    	{
-    		BufferedReader reader = new BufferedReader(new InputStreamReader(getResources().openRawResource(R.raw.eula)));
-        
-    		String text = "";
-    		while (reader.ready())
-    		{
-    			String line = reader.readLine();
-    			text += line + "\n";
-    		}
-    		reader.close();
-    		return text;
-    	}
-    	catch (Exception ex)
-    	{
-    		finish();
-    		return "ERROR";
-    	}
+		startup();
     }
     
     private void startup()
@@ -125,38 +87,22 @@ public class TriangleOfCircles extends Activity implements OnClickListener
     
     public void onClick(DialogInterface dialog, int which)
 	{
-    	if (eulaShowing)
-    	{
-    		if (which==-1)
-    		{
-    			eulaShowing = false;
-    			Editor editor = this.getSharedPreferences("TriangleOfCircles", Context.MODE_PRIVATE).edit();
-    			editor.putBoolean("eula", true);
-    			editor.commit();
-    			startup();
-    		}
-    		else
-    			finish();
-    	}
-    	else
-    	{
-	    	if (which==-1)
-	    	{
-	    		soundOn = true;
-	    		this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
-	    	}
-	    	else
-	    	{
-	    		soundOn = false;
-	    	}
-	    	int sound = 0;
-			if (soundOn)
-				sound = 1;
-			Editor editor = this.getSharedPreferences("TriangleOfCircles", Context.MODE_PRIVATE).edit();
-			editor.putInt("diff", AI.currentDifficulty);
-			editor.putInt("sound", sound);
-			editor.commit();
-    	}
+		if (which==-1)
+		{
+			soundOn = true;
+			this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
+		}
+		else
+		{
+			soundOn = false;
+		}
+		int sound = 0;
+		if (soundOn)
+			sound = 1;
+		Editor editor = this.getSharedPreferences("TriangleOfCircles", Context.MODE_PRIVATE).edit();
+		editor.putInt("diff", AI.currentDifficulty);
+		editor.putInt("sound", sound);
+		editor.commit();
 	}
     
     public void onResume()
