@@ -1,0 +1,5 @@
+BUILDING:
+	$ ant debug/release
+
+INSTALLING:
+	$ ant debug/release install
