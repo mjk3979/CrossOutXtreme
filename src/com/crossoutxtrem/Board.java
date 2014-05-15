@@ -1,4 +1,4 @@
-package com.crossoutxtremfree;
+package com.crossoutxtrem;
 
 import java.util.ArrayList;
 

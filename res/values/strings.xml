@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, TriangleOfCircles!</string>
-    <string name="app_name">Cross-Out Xtreme Free</string>
+    <string name="app_name">Cross Out Xtreme</string>
     <string name="htpObjective">The objective of Cross-Out Xtreme is to force your opponent into crossing out the last circle on the board.</string>
     <string name="htpRules">Two players take turns crossing out circles by drawing lines through them. During his or her turn a player must make a line that crosses out at least one circle, but lines may not intersect and must be straight. In addition, lines cannot go between two circles, they can only go through adjacent circles. After a player draws a line, it is the next player\'s turn to do so. The game continues until all circles have been crossed out.</string>
     <string name="htpLine">To draw a line touch the circle where you want the line to start. A circle will have a pink ring around it after it has been selected. Then, touch the circle where you want the line to end, which may be the same circle. If this is a valid move, a line will be drawn connecting the two circles, crossing out those two circles and all of the circles between them. To deselect a circle or undo a move, click the undo button at the top-right side of the screen.</string>

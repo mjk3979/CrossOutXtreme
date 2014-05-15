@@ -1,4 +1,4 @@
-package com.crossoutxtremfree;
+package com.crossoutxtrem;
 
 import android.content.Context;
 import android.graphics.Bitmap;

@@ -1,4 +1,4 @@
-package com.crossoutxtremfree;
+package com.crossoutxtrem;
 
 import java.io.BufferedReader;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.crossoutxtremfree;
+package com.crossoutxtrem;
 
 import android.graphics.Point;
 import android.graphics.Rect;

@@ -1,8 +1,8 @@
-package com.crossoutxtremfree;
+package com.crossoutxtrem;
 
 import java.util.*;
 
-import com.crossoutxtremfree.SinglePlayerGame;
+import com.crossoutxtrem.SinglePlayerGame;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;

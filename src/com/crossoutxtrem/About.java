@@ -1,6 +1,6 @@
-package com.crossoutxtremfree;
+package com.crossoutxtrem;
 
-import com.crossoutxtremfree.R;
+import com.crossoutxtrem.R;
 import java.io.InputStreamReader;
 import android.os.Bundle;
 import android.app.Activity;

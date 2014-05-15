@@ -1,11 +1,11 @@
-package com.crossoutxtremfree;
+package com.crossoutxtrem;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-import com.crossoutxtremfree.Statistics;
+import com.crossoutxtrem.Statistics;
 
 import android.app.Activity;
 import android.app.AlertDialog;
