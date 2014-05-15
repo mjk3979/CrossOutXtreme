@@ -18,6 +18,7 @@
 		<activity android:name=".TPOptions" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
 		<activity android:name=".HowToPlay" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
 		<activity android:name=".Statistics" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+		<activity android:name=".About" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
 		
     </application>
 </manifest>

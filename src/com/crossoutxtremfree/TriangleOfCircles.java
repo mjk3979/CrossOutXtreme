@@ -84,6 +84,12 @@ public class TriangleOfCircles extends Activity implements OnClickListener
     	Intent oIntent = new Intent(view.getContext(), Statistics.class);
     	startActivity(oIntent);
     }
+
+	public void aboutClicked(View view)
+	{
+		Intent oIntent = new Intent(view.getContext(), About.class);
+		startActivity(oIntent);
+	}
     
     public void onClick(DialogInterface dialog, int which)
 	{
